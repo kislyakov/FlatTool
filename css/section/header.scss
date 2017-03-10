@@ -1,0 +1,105 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @extend %clearfix;
+}
+
+
+.logo {
+  float: left;
+
+  width: 160px;
+  height: 38px;
+
+  .logo__pic {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+.social {
+  float: right;
+}
+
+.social__list {
+  @include inline-block(middle);
+
+  margin-right: 20px;
+}
+
+.social__item {
+  font-size: 0px;
+  @include inline-block(top);
+}
+
+.sprite {
+  text-decoration: none;
+
+  background: url("../img/content/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.flickr {
+  width: 29px;
+  height: 29px;
+  background-position: -44px -5px;
+}
+
+.stumble {
+  width: 31px;
+  height: 29px;
+  background-position: -5px -44px;
+}
+
+.facebook {
+  width: 29px;
+  height: 29px;
+  background-position: -5px -5px;
+}
+
+.twitter {
+  width: 29px;
+  height: 30px;
+  background-position: -46px -44px;
+}
+
+.phone {
+  @include inline-block(middle);
+}
+
+.phone__text {
+  font-size: 19px;
+  color: $grey;
+
+  @include inline-block(middle);
+  text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+
+    background: url(../img/content/spritesheet.png) no-repeat;
+    width: 29px;
+    height: 41px;
+    background-position: -85px -63px;
+
+    position: absolute;
+    top: -9px;
+    left: 90px;
+  }
+}
+
+.phone__number {
+  font-size: 20px;
+  color: $purple;
+
+  @include inline-block(middle);
+
+  margin-left: 34px;
+}
+
+

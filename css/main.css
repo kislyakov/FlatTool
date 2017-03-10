@@ -1,11 +1,17 @@
-@import "http://webfonts.ru/import/firasans.css";
+/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/ptsans */
+@import "http://fonts.fontstorage.com/import/ptsans.css";
 /*
-	Fira Sans, 100, 100 italic, 200, 200 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 600, 600 italic, 700, 700 italic
+	PT Sans, 400, 400 italic, 700, 700 italic
 */
-.container:after, .container:before {
+/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/raleway */
+@import "http://fonts.fontstorage.com/import/raleway.css";
+/*
+	Raleway, 100, 100 italic, 200, 200 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic, 900, 900 italic
+*/
+.container:after, .header:after, .slider:after, .container:before, .header:before, .slider:before {
   content: "";
   display: table; }
-.container:after {
+.container:after, .header:after, .slider:after {
   clear: both; }
 
 * {
@@ -27,7 +33,7 @@ html {
       font-size: 13px; } }
 
 body {
-  font-family: "Fira Sans", Helvetica, serif;
+  font-family: "PT Sans", Helvetica, serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.42;
   background: #ffffff; }
@@ -2769,5 +2775,189 @@ th {
   margin: 0;
   overflow: visible;
   clip: auto; }
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.logo {
+  float: left;
+  width: 160px;
+  height: 38px; }
+  .logo .logo__pic {
+    width: 100%;
+    height: 100%; }
+
+.social {
+  float: right; }
+
+.social__list {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px; }
+
+.social__item {
+  font-size: 0px;
+  display: inline-block;
+  vertical-align: top; }
+
+.sprite {
+  text-decoration: none;
+  background: url("../img/content/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block; }
+
+.flickr {
+  width: 29px;
+  height: 29px;
+  background-position: -44px -5px; }
+
+.stumble {
+  width: 31px;
+  height: 29px;
+  background-position: -5px -44px; }
+
+.facebook {
+  width: 29px;
+  height: 29px;
+  background-position: -5px -5px; }
+
+.twitter {
+  width: 29px;
+  height: 30px;
+  background-position: -46px -44px; }
+
+.phone {
+  display: inline-block;
+  vertical-align: middle; }
+
+.phone__text {
+  font-size: 19px;
+  color: #474747;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  position: relative; }
+  .phone__text::after {
+    content: "";
+    display: block;
+    background: url(../img/content/spritesheet.png) no-repeat;
+    width: 29px;
+    height: 41px;
+    background-position: -85px -63px;
+    position: absolute;
+    top: -9px;
+    left: 90px; }
+
+.phone__number {
+  font-size: 20px;
+  color: #d34272;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 34px; }
+
+.slider {
+  width: 100%;
+  height: 520px;
+  padding-top: 63px;
+  background: linear-gradient(to bottom, #1dbb90 80%, #d34272 30%); }
+
+.mac {
+  float: left;
+  width: 507px;
+  height: 409px;
+  background: url("../img/decor/mac.png"); }
+
+.content {
+  width: 380px;
+  float: right; }
+
+.content__title {
+  font-family: 'Raleway';
+  font-size: 43px;
+  color: #ffffff;
+  padding: 35px 0px; }
+
+.content__text {
+  font-size: 15px;
+  color: #474747;
+  margin-bottom: 85px; }
+
+.button {
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0px; }
+
+.button__buy {
+  font-size: 18px;
+  width: 220px;
+  background: #1dbb90;
+  margin-right: 15px; }
+
+.button__demo {
+  font-size: 18px;
+  width: 140px;
+  background: #474747; }
+
+.title {
+  font-family: 'Raleway';
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 55px; }
+  .title .green {
+    color: #1dbb90; }
+  .title .purple {
+    color: #d34272; }
+
+.check {
+  padding: 40px 0px; }
+
+.check-list {
+  margin-left: -44px; }
+
+.item {
+  display: inline-block;
+  vertical-align: top;
+  width: 280px;
+  margin-left: 44px; }
+
+.pic {
+  display: inline-block;
+  vertical-align: top;
+  width: 70px;
+  height: 60px;
+  margin-right: 10px; }
+  .pic img {
+    width: 100%;
+    height: 100%; }
+
+.title__item {
+  font-family: Raleway;
+  font-size: 25px;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 135px;
+  display: inline-block;
+  vertical-align: top; }
+  .title__item .green {
+    color: #1dbb90; }
+  .title__item .purple {
+    color: #d34272; }
+
+.item__text {
+  margin-top: 25px;
+  font-size: 15px;
+  color: #474747; }
+
+.photos {
+  margin-left: -35px; }
+
+.galere img {
+  margin-left: 20px; }
 
 /*# sourceMappingURL=main.css.map */
